@@ -7,7 +7,7 @@ let package = Package(
     products: [
         .library(
             name: "SPMText",
-            targets: ["ECPayPaymentGatewayKit"]
+            targets: ["ECPayPaymentGatewayKitWrapper"]  // 改指向 wrapper
         )
     ],
     dependencies: [
@@ -23,6 +23,18 @@ let package = Package(
             name: "ECPayPaymentGatewayKit",
             url: "https://github.com/ECPay/ECPayPaymentGatewayKit_iOS/releases/download/1.10.0/ECPayPaymentGatewayKit.zip",
             checksum: "bf11309b69c5d6b16d8baaf2c7f27c2f0041f89c85aa1432210683bb80080609"
+        ),
+        .target(
+            name: "ECPayPaymentGatewayKitWrapper",
+            dependencies: [
+                "ECPayPaymentGatewayKit",
+                .product(name: "Alamofire", package: "Alamofire"),
+                .product(name: "CryptoSwift", package: "CryptoSwift"),
+                .product(name: "IQKeyboardManagerSwift", package: "IQKeyboardManager"),
+                .product(name: "KeychainSwift", package: "keychain-swift"),
+                .product(name: "PromiseKit", package: "PromiseKit"),
+                .product(name: "SwiftyXMLParser", package: "SwiftyXMLParser"),
+            ]
         )
     ]
 )
