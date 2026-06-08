@@ -34,7 +34,8 @@ let package = Package(
                 .product(name: "KeychainSwift", package: "keychain-swift"),
                 .product(name: "PromiseKit", package: "PromiseKit"),
                 .product(name: "SwiftyXMLParser", package: "SwiftyXMLParser"),
-            ]
+            ],
+            path: "ECPayPaymentGatewayKitWrapper"
         )
     ]
 )
