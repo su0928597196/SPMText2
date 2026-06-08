@@ -16,7 +16,7 @@ let package = Package(
         .package(url: "https://github.com/hackiftekhar/IQKeyboardManager", exact: "7.0.0"),
         .package(url: "https://github.com/evgenyneu/keychain-swift", exact: "20.0.0"),
         .package(url: "https://github.com/mxcl/PromiseKit", exact: "6.13.0"),
-        .package(url: "https://github.com/yahoojapan/SwiftyXMLParser", branch: "master"),
+        .package(url: "https://github.com/yahoojapan/SwiftyXMLParser", exact: "5.6.0"),
     ],
     targets: [
         .binaryTarget(
