@@ -22,7 +22,7 @@ let package = Package(
         .binaryTarget(
             name: "ECPayPaymentGatewayKit",
             url: "https://github.com/ECPay/ECPayPaymentGatewayKit_iOS/releases/download/1.10.0/ECPayPaymentGatewayKit.zip",
-            checksum: "bf11309b69c5d6b16d8baaf2c7f27c2f0041f89c85aa1432210683bb80080609"
+            checksum: "44ee1d6b99a8c4725e8e4266951c82b10573b2c5d96b2a7dd9f4e7ad80824f11"
         ),
         .target(
             name: "ECPayPaymentGatewayKitWrapper",
